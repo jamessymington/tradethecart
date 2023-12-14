@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Pokemon</title>
+
+    <link rel="stylesheet" href="account.css">
+
+</head>
+
+<!DOCTYPE html>
+
+<body>
+
+    <header>
+
+        <div class="button-container">
+            <a href="/" class="button">Home</button></a>
+            <a href="/select" class="button">Cards</button></a>
+            <a href="admin/add" class="button">Dashboard</button></a>
+            <a href="/account" class="button">My Account</button></a>
+            <a href="\logout">logout</a>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="filter p2">
+
+            
+            
+            <br>
+            <p class="h5">
+                Your Cards
+                <a href="/filter?sort=SetID" class="button">Set</button></a>
+                <a href="/filter?sort=Rarity" class="button">Rarity</button></a>
+            </p>
+            <br>
+            <hr>
+            <div>
+                <blockquote>
+                    Add a Pokemon to your Pokedex!
+                    <a href="/admin/add"> Add a Pokemon</a>
+                </blockquote>
+            </div>
+            <div>
+                <blockquote>
+                    Delete a Pokemon from your Pokedex!
+                    <a href="/admin/delete/:Name"> Delete a Pokemon</a>
+                </blockquote>
+                <hr>
+                <br>
+                <p>
+                <h2>Your Pokemon</h2>
+                </p>
+<br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>CardID</th>
+                            <th>Name</th>
+                            <th>Rarity</th>
+                            <th>SetID</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% filterlist.forEach(card => { %>
+                            <tr>
+                                <td><%= card.CardID %></td>
+                                <td><%= card.Name %></td>
+                                <td><%= card.Rarity %></td>
+                                <td><%= card.SetID %></td>
+                            </tr>
+                        <% }); %>
+                    </tbody>
+               
+
+            </div>
+        </div>
+
+        </div>
+    </main>
+</body>
+
+
+</body>
+
+</html>
+
+</body>
+
+</html>

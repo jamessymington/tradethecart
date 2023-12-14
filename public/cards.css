@@ -1,0 +1,66 @@
+.body{
+    font-family: 'Verdana', sans-serif;
+    background-color:#EEEEFF ; 
+    color:#313152; 
+}
+
+.button {
+    background-color: #313152; 
+    color: #ffffff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+    text-decoration: none; 
+
+  }
+
+  .button:hover {
+    background-color: #06060A; 
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #EEEEFF;
+    padding: 10px;
+     
+  }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        /* Stack items vertically */
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+  
+  .card {
+      width: 30%; /* Adjust this value to control the width of each card */
+      margin: 10px;
+      text-align: center;
+  }
+  
+  .card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+  }
+  
+  .card p {
+      margin: 5px 0;
+  }
+  

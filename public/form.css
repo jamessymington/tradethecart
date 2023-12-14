@@ -1,0 +1,27 @@
+form {
+    display: flex;
+    flex-direction: column;
+    color:black;
+    margin: auto;
+}
+
+label {
+    margin-bottom: 5px;
+    color:#06060A
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+    width:300px
+    
+
+}
+
+.login-container{
+    width:300px;
+    margin: auto;
+   
+
+    
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a Pokemon</title>
+
+    <link rel="stylesheet" href="form.css">
+
+
+</head>
+
+<body>
+
+    <div class="button-container">
+        <a href="/" class="button">Home</button></a>
+        <a href="/select" class="button">Cards</button></a>
+        <a href="/admin/add" class="button">Dashboard</button></a>
+        <a href="/account" class="button">My Account</button></a>
+    </div>
+
+
+    <div>
+        <h2>Pokedex</a></h2>
+    </div>
+    <div>
+         Add a card you have collected!
+    </div>
+        <br>
+        <div class="login-container">
+            <form action="/admin/add" method="POST" role="form">
+                <label for="pokemonname">Pokemon Name</label>
+                <input type="text" name="pokemonname">
+
+                <label for="type">Type</label>
+                <input type="text" name="type">
+
+                <label for="rarity">Rarity</label>
+                <input type="text" name="rarity">
+
+                <label for="hp">HP</label>
+                <input type="number" name="hp">
+
+                <label for="image">ImageURL</label>
+                <input type="text" name="image">
+
+                <input type="submit" value="Add Pokemon" class="btn--blue">
+            </form>
+    </div>
+</body>
+
+</html>

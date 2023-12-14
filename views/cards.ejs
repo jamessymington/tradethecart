@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="cards.css">
+
+
+</head>
+
+<body>
+
+    <div class="button-container">
+        <a href="/" class="button">Home</button></a>
+        <a href="/select" class="button">Cards</button></a>
+        <a href="admin/add" class="button">Dashboard</button></a>
+        <a href="/account" class="button">My Account</button></a>
+    </div>
+
+    <header>
+        <h1>
+            <%= title %>
+        </h1>
+
+    </header>
+    <main class = "card-container">
+        <% rowdata.forEach((pokemon)=> { %>
+            <p>
+                <div class = "card">
+                <img src="<%= pokemon.image_url %>" alt="<%= pokemon.Name %>">
+                <span>
+                    <a href="/cards?pokeid=<%=pokemon.CardID%>">details</a>
+                </span>
+            </p>
+        </div>
+            <% }) %>
+    </main>
+ </body>
+</html>

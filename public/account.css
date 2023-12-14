@@ -1,0 +1,32 @@
+.body {
+    color:#06060A;
+    font-family: 'Verdana', sans-serif;
+    background-color: #EEEEFF;
+}
+.button {
+    background-color: #313152; 
+    color: #ffffff; /* White text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+    text-decoration: none; 
+
+  }
+
+  .button:hover {
+    background-color: #06060A; 
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #EEEEFF;
+    padding: 10px;
+     
+
+  }
